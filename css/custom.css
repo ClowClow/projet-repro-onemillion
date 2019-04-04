@@ -4,10 +4,11 @@
 }
 body {
   font-size: 20px;
-  font-family: "Arvo";
+  font-family: 'Arvo';
 }
-h1 {
-  font-size: 60px;
+hr {
+  color: #e74c3c;
+  width: 30%;
 }
 span.maj {
   text-transform: uppercase;
@@ -27,7 +28,7 @@ nav {
   z-index: 50;
 }
 .toplogo {
-  padding-left: 80%; 
+  padding-left: 80%;
 }
 /* code pour le jumbotronc */
 #home {
@@ -39,6 +40,9 @@ nav {
   text-align: center;
   color: #fff;
   font-family: Helvetica;
+}
+.titre {
+  font-size: 60px;
 }
 .two {
   padding-top: 50px;
@@ -63,7 +67,10 @@ nav {
 }
 /* css who section */
 #who {
-padding-left: 49%;
+  padding-top: 3%;
+  padding-left: 49%;
+  color: #e74c3c;
+  text-transform: uppercase;
 }
 /* css get involved section */
 #get-involved {
