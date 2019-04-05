@@ -103,6 +103,10 @@ nav {
   display: grid;
   grid-template-columns: 33% 34% 33%;
 }
+.fa-stack {
+  background-color: #333333;
+  border-radius: 50%; 
+}
 /* css pour le footer */
 .foot {
   background-color: #f74c3c;
