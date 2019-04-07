@@ -48,10 +48,11 @@ nav {
   display: grid;
   grid-template-columns: 20% 40% 15% 15% 10%;
   position: fixed;
+  top: 0;
   background-color: #222222;
   color: #9d9d9d;
   width: 100%;
-  height: 6%;
+  height: 50px;
   font-size: 80%;
   text-transform: uppercase;
   padding-top: 1.5%;
@@ -68,9 +69,34 @@ a.nav:hover {
   color: #fff;
   text-decoration:none;
 }
+@media (max-width: 767px) {
+  nav {
+    height: 6%;
+    font-size: 48%;
+    text-transform: uppercase;
+    padding-top: 1.5%;
+    z-index: 50;
+    overflow: hidden;
+  }
+  .toplogo {
+    padding-left: 80%;
+  }
+  a.nav, a.nav:visited {
+    color: #9d9d9d;
+    text-decoration: none;
+  }
+  a.nav:hover {
+    color: #fff;
+    text-decoration:none;
+  }
+}
 /* code pour le jumbotronc */
-#home {
+.jumbotron {
   background-image: url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
   padding-top: 10%;
   text-align: center;
   width: 100%;
