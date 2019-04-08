@@ -107,11 +107,11 @@ a.nav:hover {
     padding-left: 80%;
   }
   a.nav, a.nav:visited {
-    color: #9d9d9d;
+    color: #222222;
     text-decoration: none;
   }
   a.nav:hover {
-    color: #fff;
+    color: #222222;
     text-decoration:none;
   }
   .fa-align-justify{
