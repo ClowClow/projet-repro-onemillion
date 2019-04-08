@@ -98,12 +98,13 @@ a.nav:hover {
 @media (max-width: 767px) {
   nav {
     display: grid;
-    grid-template-columns: 30% 40% 0% 0% 30%;
+    grid-template-columns: 10% 60% 0% 0% 30%;
     height: 6%;
     font-size: 48%;
     text-transform: uppercase;
     padding-top: 1.5%;
     z-index: 50;
+    overflow: hidden;
   }
   .toplogo {
     padding-left: 80%;
