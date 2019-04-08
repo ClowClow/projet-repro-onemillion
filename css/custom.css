@@ -46,7 +46,7 @@ span.color {
 /* CSS pour la barre de navigation */
 nav {
   display: grid;
-  grid-template-columns: 20% 40% 15% 15% 10%;
+  grid-template-columns: 20% 60%;
   position: fixed;
   top: 0;
   background-color: #222222;
@@ -60,6 +60,12 @@ nav {
 }
 .toplogo {
   padding-left: 80%;
+}
+nav li{
+  float: right;
+  list-style-type: none;
+  padding-left: 3%;
+
 }
 a.nav, a.nav:visited {
   color: #9d9d9d;
