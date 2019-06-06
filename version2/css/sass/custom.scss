@@ -171,3 +171,9 @@ h3 {
     color: #333333;
   }
 }
+@media (max-width: 700px) {
+  .foot {
+    grid-template-columns: 90% 10%;
+    padding-left: 5%;
+  }
+}
