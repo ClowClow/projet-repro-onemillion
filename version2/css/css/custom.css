@@ -138,5 +138,8 @@ h3 {
   padding-left: 20%;
   background-color: #e74c3c;
   height: 15em; }
+  .foot .fa-arrow-circle-o-up, .foot .fa-arrow-circle-o-up:visited {
+    text-decoration: none;
+    color: #333333; }
 
 /*# sourceMappingURL=custom.css.map */

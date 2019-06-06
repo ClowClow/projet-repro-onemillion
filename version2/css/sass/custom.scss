@@ -165,4 +165,9 @@ h3 {
   padding-left: 20%;
   background-color: $orange;
   height: 15em;
+
+  .fa-arrow-circle-o-up, .fa-arrow-circle-o-up:visited {
+    text-decoration: none;
+    color: #333333;
+  }
 }
