@@ -1,0 +1,142 @@
+/* Collection couleurs */
+/* Collection text */
+/* Collection flex */
+/* Collection links */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Arvo"; }
+
+nav {
+  height: 3em;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  nav a {
+    color: #949596;
+    outline-style: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-variant: small-caps; }
+    nav a:hover {
+      color: #fff; }
+
+hr {
+  width: 10%;
+  border: 1px solid #e74c3c;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+.titre {
+  text-align: center;
+  font-size: 4em;
+  padding: 0.5em; }
+
+.titre2, h3 {
+  color: #e74c3c;
+  font-variant: small-caps;
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2em; }
+
+.jumbotron {
+  background-image: url(../../images/hero-image.jpg);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em; }
+  .jumbotron background {
+    repeat: no-repeat;
+    size: cover;
+    position: center; }
+  .jumbotron .two {
+    font-size: 1.5em;
+    padding: 0.5em; }
+  .jumbotron .bouton {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    font-size: 1.5em;
+    background-color: #d2322d;
+    border: 0.1em solid #ac2925;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin: 1em; }
+    .jumbotron .bouton:hover {
+      background-color: #ac2925; }
+  .jumbotron a {
+    color: #fff;
+    outline-style: none;
+    text-decoration: none; }
+  .jumbotron .code {
+    padding: 0.5em;
+    margin: 1em; }
+
+#who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em; }
+  #who .whotext {
+    text-align: center;
+    font-size: 1.5em; }
+  #who .academy {
+    padding: 1em; }
+
+#get-involved {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #get-involved .info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em; }
+  #get-involved .stud, #get-involved .edu, #get-involved .sponsor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em; }
+    #get-involved .stud .fa-stack, #get-involved .edu .fa-stack, #get-involved .sponsor .fa-stack {
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+      border-radius: 50%; }
+    #get-involved .stud .bouton2, #get-involved .edu .bouton2, #get-involved .sponsor .bouton2 {
+      color: #e74c3c;
+      background-color: #fff;
+      border: 0.1em solid #949596;
+      border-radius: 0.5em;
+      padding: 0.5em;
+      margin: 1em; }
+      #get-involved .stud .bouton2:hover, #get-involved .edu .bouton2:hover, #get-involved .sponsor .bouton2:hover {
+        background-color: #f5f5f5; }
+    #get-involved .stud a, #get-involved .edu a, #get-involved .sponsor a {
+      outline-style: none;
+      text-decoration: none; }
+
+.foot {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  padding-left: 20%;
+  background-color: #e74c3c;
+  height: 15em; }
+
+/*# sourceMappingURL=custom.css.map */

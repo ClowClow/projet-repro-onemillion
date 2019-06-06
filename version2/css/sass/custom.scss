@@ -1,0 +1,168 @@
+/* Collection couleurs */
+$orange: #e74c3c;
+$lightcorail: #d2322d;
+$corail: #ac2925;
+$lightgrey : #f5f5f5;
+$grey : #949596;
+/* Collection text */
+@mixin arvo {
+  font-family: "Arvo";
+}
+@mixin maj {
+  font-variant: small-caps;
+}
+/* Collection flex */
+@mixin row-space-around {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Collection links */
+@mixin link {
+  outline-style: none;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  @include arvo;
+}
+nav {
+  height: 3em;
+  background-color: #000;
+  @include row-space-around;
+  a {
+    color: $grey;
+    @include link;
+    font-size: 1.5em;
+    @include maj;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+hr {
+  width: 10%;
+  border: 1px solid $orange;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.titre {
+  text-align: center;
+  font-size: 4em;
+  padding: 0.5em;
+}
+.titre2 {
+  color: $orange;
+  @include maj;
+    font-size: 2.5em;
+}
+h3 {
+  @extend .titre2;
+  font-size: 2em;
+}
+.jumbotron {
+  background-image: url(../../images/hero-image.jpg);
+  background {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+    }
+  color: #fff;
+  @include flex-center-col;
+  padding: 2em;
+
+  .two {
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+  .bouton {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    font-size: 1.5em;
+    background-color: $lightcorail;
+    border: 0.1em solid $corail;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin: 1em;
+
+  &:hover{
+      background-color: $corail;
+  }
+  }
+  a {
+    color: #fff;
+    @include link;
+  }
+  .code {
+    padding: 0.5em;
+    margin: 1em;
+  }
+}
+#who {
+  @include flex-center-col;
+  padding: 1em;
+  .whotext {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .academy {
+    padding: 1em;
+  }
+}
+
+#get-involved {
+  background-color: $lightgrey;
+  @include flex-center-col;
+  .info {
+    width: 100%;
+    @include row-space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+  .stud, .edu, .sponsor {
+    @include flex-center-col;
+    text-align: center;
+    font-size: 1.5em;
+    .fa-stack {
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+      border-radius: 50%;
+    }
+    .bouton2 {
+      color: $orange;
+      background-color : #fff;
+      border: 0.1em solid $grey;
+      border-radius: 0.5em;
+      padding: 0.5em;
+      margin: 1em;
+
+      &:hover {
+        background-color: $lightgrey;
+      }
+    }
+    a {
+      @include link;
+    }
+    padding: 1em;
+  }
+}
+.foot {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  padding-left: 20%;
+  background-color: $orange;
+  height: 15em;
+}
